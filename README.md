@@ -6,7 +6,9 @@
 # これは何？
 
 非公式ながら、UnityのWebGLゲームはRPGアツマール( https://game.nicovideo.jp/atsumaru/ )に置く事が可能です。
+
 が、セーブとロードが動きません。
+
 なんでかというと、RPGアツマール上でのセーブとロードは独自拡張された `localStorage` を使う(もしくはアツマールAPI直叩き)必要があるのですが、UnityのWebGLデプロイでは `localStorage` ではなく `IndexedDB` を使ってセーブデータを処理しており、 `IndexedDB` はアツマール上では保存されない為です。
 
 なので「 `localStorage` に保存する `PlayerPrefs` っぽい奴」を作りました。
@@ -15,11 +17,13 @@
 # 試す
 
 山田がアップロードした動作サンプルは今のところ、以下に置いてます。
+
 https://game.nicovideo.jp/atsumaru/games/gm7735?key=6fe563c1c240
 
 この動作サンプルのプロジェクト一式は github の「releases」のところからダウンロード可能です( https://github.com/ayamada/PlayerPrefsAtsumaru/releases 内の「Source code (zip)」より)。
 
 Unityエディタでこの一式を開いて、エディタ上から動かしたり、WebGLビルドして動かしたりしてみてください。
+
 また、アツマールに限定公開でアップロードして、セーブとロードが正常に動く事も確認できるでしょう。
 
 
@@ -39,6 +43,7 @@ Unityエディタでこの一式を開いて、エディタ上から動かした
 - https://docs.unity3d.com/jp/current/ScriptReference/PlayerPrefs.html
 
 また、あちこちに解説があると思うので、自分で探してもよいでしょう。
+
 サンプルプロジェクト一式の中の `Assets/SampleScene.cs` にも実際のコードがあります。
 
 
