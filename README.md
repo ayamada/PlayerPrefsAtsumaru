@@ -65,9 +65,10 @@ Unityエディタでこの一式を開いて、エディタ上から動かした
 
 # ライセンス
 
-- zlibライセンスとします。
+- `PlayerPrefsAtsumaru` 本体のライセンスはzlibライセンスとします。
     - 当ライブラリの利用時にcopyright文等を表示させる義務はありません。無表示で使えます。
     - zlibライセンスの日本語での解説は https://ja.wikipedia.org/wiki/Zlib_License 等で確認してください。
+    - `PlayerPrefsAtsumaru` 本体以外のサンプルプロジェクト一式としては、後述のテンプレやunity由来の色々が含まれています。これらについては元々のライセンスを参照してください。
 
 
 # その他の参考情報
