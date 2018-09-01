@@ -17,7 +17,7 @@
 山田がアップロードした動作サンプルは今のところ、以下に置いてます。
 https://game.nicovideo.jp/atsumaru/games/gm7735?key=6fe563c1c240
 
-この動作サンプルのプロジェクト一式は github の「releases」のところ( https://github.com/ayamada/PlayerPrefsAtsumaru/releases )からダウンロード可能です。
+この動作サンプルのプロジェクト一式は github の「releases」のところからダウンロード可能です( https://github.com/ayamada/PlayerPrefsAtsumaru/releases 内の「Source code (zip)」より)。
 
 Unityエディタでこの一式を開いて、エディタ上から動かしたり、WebGLビルドして動かしたりしてみてください。
 また、アツマールに限定公開でアップロードして、セーブとロードが正常に動く事も確認できるでしょう。
