@@ -1,0 +1,2 @@
+# PlayerPrefsAtsumaru
+アツマール上に置いたunityのWebGLゲームでセーブロードするやつ
