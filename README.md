@@ -9,9 +9,11 @@
 
 が、セーブとロードが動きません。
 
-なんでかというと、RPGアツマール上でのセーブとロードは独自拡張された `localStorage` を使う(もしくはアツマールAPI直叩き)必要があるのですが、UnityのWebGLデプロイでは `localStorage` ではなく `IndexedDB` を使ってセーブデータを処理しており、 `IndexedDB` はアツマール上では保存されない為です。
+なんでかというと、RPGアツマール上でのセーブとロードは独自拡張された `localStorage` を使う(もしくはアツマールAPI直叩き)必要があるのですが、UnityのWebGLデプロイでの `PlayerPrefs` は `localStorage` ではなく `IndexedDB` を使ってセーブデータを処理しており、 `IndexedDB` はアツマール上では保存されない為です。
 
 なので「 `localStorage` に保存する `PlayerPrefs` っぽい奴」を作りました。
+それが `PlayerPrefsAtsumaru` です。
+これを使えばアツマール上でもセーブロードできます。
 
 
 # 試す
